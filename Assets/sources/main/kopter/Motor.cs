@@ -68,7 +68,8 @@ public class Motor : MonoBehaviour
 	/// </summary>
 	/// <param name="controlMessage">Control message.</param>
 	public void controlsReceiver (ControlMessage controlMessage) {
-//		Debug.Log("Message received " + controlMessage.ToString());
+
+		//Debug.Log("Message received " + controlMessage.ToString());
 
 		this.throttleInput = controlMessage.ThrottleInput;
 
