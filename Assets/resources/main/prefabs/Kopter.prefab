@@ -1809,7 +1809,7 @@ MonoBehaviour:
   yawRotation: 0
   R: {x: 0, y: 0, z: 0}
   FrRpm: {x: 0, y: 0, z: 0}
-  rpm: 0
+  rpm: 200
   p: {x: 0, y: 0, z: 0}
   variationMotionSpeed: {x: 0, y: 0, z: 0}
   motionSpeed: {x: 0, y: 0, z: 0}

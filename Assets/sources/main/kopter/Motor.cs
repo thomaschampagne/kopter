@@ -23,9 +23,9 @@ public class Motor : MonoBehaviour
 	private const float landingAngleMax = 30.0f;
 	
 	// User Input From Controller manager
-	private Vector3 strafingVectorInput;
-	private float selfRotationInput;
-	private float throttleInput;
+	private Vector3 strafingVectorInput = Vector3.zero;
+	private float selfRotationInput = 0;
+	private float throttleInput = 0;
 	
 	// Motion and forces
 	bool isFlying;
@@ -58,7 +58,6 @@ public class Motor : MonoBehaviour
 		p = mass * gravity;
 		R = Vector3.zero;
 		FrRpm = Vector3.zero;
-		rpm = 50.0f;
 		motionSpeed = Vector3.zero;
 		strafeRotation = Quaternion.identity;
 		deltaPositionAdjust = Vector3.zero;
@@ -69,9 +68,15 @@ public class Motor : MonoBehaviour
 	/// </summary>
 	/// <param name="controlMessage">Control message.</param>
 	public void controlsReceiver (ControlMessage controlMessage) {
-		Debug.Log("Message received " + controlMessage.ToString());
-		this.ThrottleInput = controlMessage.ThrottleInput;
+//		Debug.Log("Message received " + controlMessage.ToString());
 
+		this.throttleInput = controlMessage.ThrottleInput;
+
+		if(R.magnitude == 0) {
+
+			this.selfRotationInput = controlMessage.SelfRotationInput;
+			this.strafingVectorInput = controlMessage.StrafingVectorInput;
+		}
 	}
 
 
@@ -116,9 +121,7 @@ public class Motor : MonoBehaviour
 		
 		// Seeking for position variation. Because dP = Speed * dT;
 		Vector3 deltaPosition = motionSpeed * Time.deltaTime;
-		
-		
-		
+
 		// Now move
 		transform.position += deltaPosition + deltaPositionAdjust; // Equals to -> transform.Translate (deltaPosition, Space.World); 
 		

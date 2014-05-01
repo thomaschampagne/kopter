@@ -1,11 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sources\main\kopter\GamePadController.cs">
     <Files>
-      <File FileName="Assets\sources\main\kopter\Controller.cs" Line="22" Column="2" />
-      <File FileName="Assets\sources\main\kopter\GamePadController.cs" Line="17" Column="37" />
-      <File FileName="Assets\sources\main\kopter\Messages\ControlMessage.cs" Line="5" Column="26" />
-      <File FileName="Assets\sources\main\kopter\Motor.cs" Line="26" Column="2" />
+      <File FileName="Assets\sources\main\kopter\GamePadController.cs" Line="31" Column="3" />
+      <File FileName="Assets\sources\main\kopter\Motor.cs" Line="85" Column="24" />
+      <File FileName="Assets\sources\main\kopter\Messages\ControlMessage.cs" Line="19" Column="31" />
+      <File FileName="Assets\sources\main\kopter\Controller.cs" Line="97" Column="3" />
+      <File FileName="Assets\sources\main\kopter\CameraManager.cs" Line="31" Column="22" />
+      <File FileName="Assets\sources\main\camera\impl\BehindCameraControllerImpl.cs" Line="20" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
