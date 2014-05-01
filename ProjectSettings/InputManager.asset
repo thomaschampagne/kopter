@@ -373,7 +373,7 @@ InputManager:
     axis: 2
     joyNum: 1
   - serializedVersion: 3
-    m_Name: 4th axis
+    m_Name: 2nd X axis
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -389,7 +389,7 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: 5th axis
+    m_Name: 2nd Y axis
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -452,3 +452,19 @@ InputManager:
     type: 2
     axis: 7
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: X axis
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 1
+    axis: 0
+    joyNum: 0

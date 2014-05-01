@@ -5,6 +5,7 @@ public class Motor : MonoBehaviour
 {
 	
 	public static Motor Instance { get; set; }
+	public static string controlsMessageReceiverMethodName = "controlsReceiver";
 	
 	// Factors and Tweaking
 	public float yawRotationAccelFactor = 5f;
@@ -64,9 +65,20 @@ public class Motor : MonoBehaviour
 	}
 
 	/// <summary>
+	/// ControlsMessage Receiver from GamePad, keyboard, mouse...
+	/// </summary>
+	/// <param name="controlMessage">Control message.</param>
+	public void controlsReceiver (ControlMessage controlMessage) {
+		Debug.Log("Message received " + controlMessage.ToString());
+		this.ThrottleInput = controlMessage.ThrottleInput;
+
+	}
+
+
+	/// <summary>
 	/// Updates the motor.
 	/// </summary>
-	public void UpdateMotor ()
+	public void Update ()
 	{
 		// Getting information from floor. distance, hit normal surface, ...
 		// Is Kopter in air ?
@@ -85,7 +97,7 @@ public class Motor : MonoBehaviour
 		// Compute Force initiated by Rotor
 		FrRpm = (((-1 * p) * rpm) / kRpmLift);
 		FrRpm = Quaternion.FromToRotation (Vector3.up, transform.up) * FrRpm; // Set rotor force colinnear to self Vector3 up
-		FrRpm = FrRpm * kRotorSurfaceForceFactor;//TODO Coeff portance lames
+		FrRpm = FrRpm * kRotorSurfaceForceFactor;
 		
 		// Ground resistance
 		int isRApplied = (p.magnitude <= FrRpm.y || isFlying) ? 0 : 1;

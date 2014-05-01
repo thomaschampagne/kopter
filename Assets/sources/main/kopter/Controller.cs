@@ -29,7 +29,12 @@ public class Controller : MonoBehaviour
 		float throttleRotorIn = 0.0f;
 		if (Input.GetKey (KeyCode.Z)) {	throttleRotorIn = 1.0f;	}
 		if (Input.GetKey (KeyCode.S)) {	throttleRotorIn = -1.0f; }
+
 		lerpingThrottle(ref throttle, ref throttleRotorIn);
+
+		/**
+			 * ======== Input to motor ==========
+			 */
 		Motor.Instance.ThrottleInput = throttleRotorIn;
 		
 		if(Motor.Instance.R.magnitude == 0) {
@@ -46,17 +51,25 @@ public class Controller : MonoBehaviour
 			
 			float leftRightPlateInput = Input.GetAxis ("Horizontal") + mouseXin;
 			float frontBackPlateInput = Input.GetAxis ("Vertical") + mouseYin;
+
+			/**
+			 * ======== Input to motor ==========
+			 */
 			Motor.Instance.StrafingVectorInput = (new Vector3 (-leftRightPlateInput, 0, frontBackPlateInput));
 			
 			// Find self copter rotation	
 			float selfCopterRotation = 0.0f;
 			if (Input.GetKey (KeyCode.Q)) {	selfCopterRotation = -1.0f;	}
 			if (Input.GetKey (KeyCode.D)) {	selfCopterRotation = 1.0f;	}
+
+			/**
+			 * ======== Input to motor ==========
+			 */
 			Motor.Instance.SelfRotationInput = selfCopterRotation;
 		}
 		
 		// Update
-		Motor.Instance.UpdateMotor ();
+//		Motor.Instance.UpdateMotor ();
 		
 		// Reset
 		if(Input.GetKeyUp (KeyCode.R)) {
