@@ -26,8 +26,9 @@ public class GuiManager : MonoBehaviour
 	}
 	
 	void OnGUI ()
-	{
-	
+	{	
+		/*
+		 * Comments GUI Display
 		if(GameManager.Instance.CurrentGameState == GameState.InGame) {
 		
 			if (displayTweak) {
@@ -68,5 +69,6 @@ public class GuiManager : MonoBehaviour
 				GUI.Label (new Rect (10, 50, 600, 20), "Kopter Lift Ratio [" + liftRatio.ToString("0.00") + "]\t|\tLifting [" + ((liftRatio >= 1) ? "UP" : "DOWN") + "]\t|\tGrounded [" + (!Motor.Instance.IsFlying).ToString() + "]", style);
 			}
 		}
+		*/
 	}
 }

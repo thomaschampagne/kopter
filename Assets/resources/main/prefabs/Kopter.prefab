@@ -313,7 +313,6 @@ GameObject:
   - 4: {fileID: 400034}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400008}
-  - 114: {fileID: 11400006}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
@@ -1774,17 +1773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447fa6cdcbc69894bb2b146f25152ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100034}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab6622dde466f743811db76ecd436a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1809,7 +1797,7 @@ MonoBehaviour:
   yawRotation: 0
   R: {x: 0, y: 0, z: 0}
   FrRpm: {x: 0, y: 0, z: 0}
-  rpm: 200
+  rpm: 0
   p: {x: 0, y: 0, z: 0}
   variationMotionSpeed: {x: 0, y: 0, z: 0}
   motionSpeed: {x: 0, y: 0, z: 0}

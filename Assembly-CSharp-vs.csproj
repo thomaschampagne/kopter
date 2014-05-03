@@ -52,7 +52,6 @@
      <Compile Include="Assets\sources\main\camera\impl\InsideCameraControllerImpl.cs" />
      <Compile Include="Assets\sources\main\camera\impl\OrbitalCameraControllerImpl.cs" />
      <Compile Include="Assets\sources\main\kopter\CameraManager.cs" />
-     <Compile Include="Assets\sources\main\kopter\Controller.cs" />
      <Compile Include="Assets\sources\main\kopter\GameController.cs" />
      <Compile Include="Assets\sources\main\kopter\Messages\MotorControlsMessage.cs" />
      <Compile Include="Assets\sources\main\kopter\Motor.cs" />

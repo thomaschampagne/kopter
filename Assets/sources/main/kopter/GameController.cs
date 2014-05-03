@@ -18,8 +18,14 @@ public class GameController : MonoBehaviour {
 			CameraManager.Instance.SwitchNextCamera();
 		}
 
+		// Reset
 		if(Input.GetButtonUp("Reset Kopter")) {
 			Motor.Instance.Reset();
+		}
+
+		// Quit
+		if(Input.GetButtonUp("Quit Game")) {
+			Application.Quit();	
 		}
 
 		// Getting user motor input data
