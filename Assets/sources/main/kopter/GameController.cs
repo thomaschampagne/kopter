@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	protected MotorControlsMessage mMotorControlsMessage = null, mPreviousControlsMessage = null;
+	protected MotorControlsMessage mMotorControlsMessage = null;
 
 	// Use this for initialization
 	void Start () {
