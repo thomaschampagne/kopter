@@ -1799,13 +1799,13 @@ MonoBehaviour:
   yawRotationAccelFactor: 5
   yawRotationDeccelFactor: 1
   strafeRotationAccelFactor: 2
-  throttleAccelerationFactor: 100
+  throttleAccelerationFactor: 120
   kRpmLift: 250
-  kRpmMax: 600
+  kRpmMax: 750
   kRotorSurfaceForceFactor: 1
   mass: 1
   variationMotionSpeedFactor: 3
-  clampSpeed: 110
+  clampSpeed: 130
   yawRotation: 0
   R: {x: 0, y: 0, z: 0}
   FrRpm: {x: 0, y: 0, z: 0}
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b82afb3ee88add4bb9439f3d4b1b1f2, type: 3}
+  m_Script: {fileID: 11500000, guid: d38d2d9e35669f64282d9e66fb3b0561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000

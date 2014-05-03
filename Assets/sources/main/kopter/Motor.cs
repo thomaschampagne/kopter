@@ -67,17 +67,17 @@ public class Motor : MonoBehaviour
 	/// ControlsMessage Receiver from GamePad, keyboard, mouse...
 	/// </summary>
 	/// <param name="controlMessage">Control message.</param>
-	public void controlsReceiver (ControlMessage controlMessage) {
+	public void controlsReceiver (MotorControlsMessage controlMessage) {
 
 		//Debug.Log("Message received " + controlMessage.ToString());
 
 		this.throttleInput = controlMessage.ThrottleInput;
 
 		if(R.magnitude == 0) {
-
 			this.selfRotationInput = controlMessage.SelfRotationInput;
 			this.strafingVectorInput = controlMessage.StrafingVectorInput;
 		}
+
 	}
 
 

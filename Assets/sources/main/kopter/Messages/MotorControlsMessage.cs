@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ControlMessage
+public class MotorControlsMessage
 {
 
 	// ThrottleInput
@@ -12,6 +12,8 @@ public class ControlMessage
 
 	// SelfRotationInput
 	protected float mSelfRotationInput = 0;
+
+	protected bool mSwitchCamera = false;
 
 
 	public float ThrottleInput {
@@ -41,18 +43,14 @@ public class ControlMessage
 		}
 	}
 
-	public override bool Equals (object obj)
-	{
-		if (obj == null)
-			return false;
-		if (ReferenceEquals (this, obj))
-			return true;
-		if (obj.GetType () != typeof(ControlMessage))
-			return false;
-		ControlMessage other = (ControlMessage)obj;
-		return mThrottleInput == other.mThrottleInput && mStrafingVectorInput == other.mStrafingVectorInput && mSelfRotationInput == other.mSelfRotationInput;
+	bool SwitchCamera {
+		get {
+			return this.mSwitchCamera;
+		}
+		set {
+			mSwitchCamera = value;
+		}
 	}
-	
 
 	public override int GetHashCode ()
 	{
