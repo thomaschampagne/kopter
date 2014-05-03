@@ -19,7 +19,6 @@ public class GamePadController : MonoBehaviour {
 		float xStraffing = Input.GetAxis("2nd X axis");
 		float yStraffing = Input.GetAxis("2nd Y axis");
 
-
 		// Prepare control message
 		mControlsMessage.ThrottleInput = throttle;
 		mControlsMessage.SelfRotationInput = selfRotation;
