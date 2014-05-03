@@ -52,11 +52,8 @@ public class OrbitalCameraControllerImpl : AbstractCameraController, CameraContr
 
 	void RotateControls ()
 	{
-		if (Input.GetMouseButton (0)) {
-			xRot += Input.GetAxis ("mouseX") * mouseXSpeed;
-			yRot += -Input.GetAxis ("mouseY") * mouseYSpeed;
-		}
-		
+			xRot += Input.GetAxis ("Turn X Orbital Camera") * mouseXSpeed;
+			yRot += -Input.GetAxis ("Turn Y Orbital Camera") * mouseYSpeed;
 	}
 	
 	void Rotate (float x, float y)
@@ -68,9 +65,9 @@ public class OrbitalCameraControllerImpl : AbstractCameraController, CameraContr
 	
 	void Zoom ()
 	{
-		if (Input.GetAxis ("MouseScrollWheel") < 0.0f) {
+		if (Input.GetAxis ("Zoom Orbital Camera") < 0.0f) {
 			this.ZoomOut ();
-		} else if (Input.GetAxis ("MouseScrollWheel") > 0.0f) {
+		} else if (Input.GetAxis ("Zoom Orbital Camera") > 0.0f) {
 			this.ZoomIn ();
 		}
 	}

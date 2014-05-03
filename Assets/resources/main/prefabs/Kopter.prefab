@@ -313,11 +313,11 @@ GameObject:
   - 4: {fileID: 400034}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400008}
-  - 114: {fileID: 11400006}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400012}
   m_Layer: 2
   m_Name: Kopter
   m_TagString: Untagged
@@ -1773,17 +1773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447fa6cdcbc69894bb2b146f25152ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100034}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab6622dde466f743811db76ecd436a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1797,14 +1786,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yawRotationAccelFactor: 5
   yawRotationDeccelFactor: 1
-  strafeRotationAccelFactor: 1.5
-  throttleAccelerationFactor: 100
+  strafeRotationAccelFactor: 2
+  throttleAccelerationFactor: 120
   kRpmLift: 250
-  kRpmMax: 600
+  kRpmMax: 750
   kRotorSurfaceForceFactor: 1
   mass: 1
   variationMotionSpeedFactor: 3
-  clampSpeed: 110
+  clampSpeed: 130
   yawRotation: 0
   R: {x: 0, y: 0, z: 0}
   FrRpm: {x: 0, y: 0, z: 0}
@@ -1822,6 +1811,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3ed6c119b689d14f96229c80fb57e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d2d9e35669f64282d9e66fb3b0561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000
