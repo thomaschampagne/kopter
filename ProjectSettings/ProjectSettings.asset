@@ -10,7 +10,7 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Me
+  companyName: ThomasChampagne
   productName: Kopter
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -113,7 +113,7 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: fefc6bcc69da66749b07923163c0a462, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 5329ce9c504fe2f4e93839acfc2d0dd7, type: 3}
       m_Size: 128
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
