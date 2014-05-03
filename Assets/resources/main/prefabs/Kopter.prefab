@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yawRotationAccelFactor: 5
   yawRotationDeccelFactor: 1
-  strafeRotationAccelFactor: 1.5
+  strafeRotationAccelFactor: 2
   throttleAccelerationFactor: 100
   kRpmLift: 250
   kRpmMax: 600

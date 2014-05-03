@@ -14,7 +14,7 @@ PlayerSettings:
   productName: Kopter
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  defaultScreenWidth: 1024
+  defaultScreenWidth: 1366
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
@@ -23,7 +23,7 @@ PlayerSettings:
   m_ActiveColorSpace: 0
   m_MTRendering: 1
   m_MobileMTRendering: 0
-  m_UseDX11: 0
+  m_UseDX11: 1
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   displayResolutionDialog: 1
@@ -46,7 +46,7 @@ PlayerSettings:
   forceSingleInstance: 0
   resizableWindow: 0
   useMacAppStoreValidation: 0
-  gpuSkinning: 0
+  gpuSkinning: 1
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
@@ -115,22 +115,6 @@ PlayerSettings:
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: fefc6bcc69da66749b07923163c0a462, type: 3}
       m_Size: 128
-  - m_BuildTarget: Standalone
-    m_Icons:
-    - m_Icon: {fileID: 2800000, guid: fefc6bcc69da66749b07923163c0a462, type: 3}
-      m_Size: 1024
-    - m_Icon: {fileID: 0}
-      m_Size: 512
-    - m_Icon: {fileID: 0}
-      m_Size: 256
-    - m_Icon: {fileID: 0}
-      m_Size: 128
-    - m_Icon: {fileID: 0}
-      m_Size: 48
-    - m_Icon: {fileID: 0}
-      m_Size: 32
-    - m_Icon: {fileID: 0}
-      m_Size: 16
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
