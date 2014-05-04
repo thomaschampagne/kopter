@@ -39,24 +39,22 @@ public class CameraManager : MonoBehaviour
 			Debug.LogError (errorMessage);
 			throw new UnityException (errorMessage);
 		}
-		
 
-	
 		// Setup normal camera reference
 		behindCamRef = ScriptableObject.CreateInstance<BehindCameraControllerImpl> ();
-		behindCamRef.setCamera (Camera.main.camera);
+		behindCamRef.setCamera (Camera.main);
 		behindCamRef.setTracker (cameraTracker);
 		behindCamRef.InitCam ();
 		
 		// Setup inside camera reference
 		insideCamRef = ScriptableObject.CreateInstance<InsideCameraControllerImpl> ();
-		insideCamRef.setCamera (Camera.main.camera);
+		insideCamRef.setCamera (Camera.main);
 		insideCamRef.setTracker (cameraTracker);
 		insideCamRef.InitCam ();
 		
 		// Setup orbital camera reference
 		orbitalCamRef = ScriptableObject.CreateInstance<OrbitalCameraControllerImpl> ();
-		orbitalCamRef.setCamera (Camera.main.camera);
+		orbitalCamRef.setCamera (Camera.main);
 		orbitalCamRef.setTracker (cameraTracker);
 		orbitalCamRef.InitCam ();
 

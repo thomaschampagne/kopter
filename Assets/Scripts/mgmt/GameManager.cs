@@ -1,7 +1,6 @@
 using UnityEngine;
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -82,8 +81,9 @@ public class GameManager : MonoBehaviour
 	public void startLoadingLevel (Level lvl)
 	{
 		CurrentLevel = lvl;
-		Application.LoadLevel (lvl.ToString ());
-	}
+		//Application.LoadLevel (lvl.ToString ());
+        SceneManager.LoadScene(lvl.ToString());
+    }
 
 	public void prepareScene ()
 	{
