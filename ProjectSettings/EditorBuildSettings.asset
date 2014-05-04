@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/resources/main/scenes/Bootstrap.unity
+    path: Assets/Scenes/Bootstrap.unity
   - enabled: 1
-    path: Assets/resources/main/scenes/Splash.unity
+    path: Assets/Scenes/Splash.unity
   - enabled: 1
-    path: Assets/resources/main/scenes/main.unity
+    path: Assets/Scenes/main.unity
