@@ -23,6 +23,7 @@ public class OrbitalCameraControllerImpl : AbstractCameraController, CameraContr
 	// Use this for camera initialization
 	public void InitCam ()
 	{
+        
 		if (camera == null) {
 			string errorMessage = "No camera founded. Use setCamera on this Object !";
 			Debug.LogError (errorMessage);

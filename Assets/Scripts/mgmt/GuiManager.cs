@@ -10,7 +10,9 @@ public class GuiManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Screen.showCursor = false;
+
+        Cursor.visible = false;
+
 		displayTweak = false;
 		// Define style
 		style = new GUIStyle ();
