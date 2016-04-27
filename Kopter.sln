@@ -1,9 +1,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{F3680E75-65DB-C7B9-B11B-7DBA337607AB}") = "Kopter", "Assembly-CSharp.csproj", "{082BE354-DF1E-25FA-B29C-EF992237B6A0}"
+Project("{A6261988-B6C7-2673-EDAD-CC07D1CB2843}") = "kopter", "Assembly-CSharp.csproj", "{5940F38F-15E1-A7D2-B629-16E644C11324}"
 EndProject
-Project("{F3680E75-65DB-C7B9-B11B-7DBA337607AB}") = "Kopter", "Assembly-CSharp-Editor.csproj", "{B046A245-8F56-F006-8D95-4A11B37583F2}"
+Project("{A6261988-B6C7-2673-EDAD-CC07D1CB2843}") = "kopter", "Assembly-CSharp-Editor.csproj", "{A18A800A-39BD-3C84-B04B-AB85A2951437}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{082BE354-DF1E-25FA-B29C-EF992237B6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{082BE354-DF1E-25FA-B29C-EF992237B6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{082BE354-DF1E-25FA-B29C-EF992237B6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{082BE354-DF1E-25FA-B29C-EF992237B6A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B046A245-8F56-F006-8D95-4A11B37583F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B046A245-8F56-F006-8D95-4A11B37583F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B046A245-8F56-F006-8D95-4A11B37583F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B046A245-8F56-F006-8D95-4A11B37583F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5940F38F-15E1-A7D2-B629-16E644C11324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5940F38F-15E1-A7D2-B629-16E644C11324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5940F38F-15E1-A7D2-B629-16E644C11324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5940F38F-15E1-A7D2-B629-16E644C11324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18A800A-39BD-3C84-B04B-AB85A2951437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18A800A-39BD-3C84-B04B-AB85A2951437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18A800A-39BD-3C84-B04B-AB85A2951437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18A800A-39BD-3C84-B04B-AB85A2951437}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
