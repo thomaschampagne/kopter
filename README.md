@@ -1,7 +1,10 @@
 # Kopter, a 24h Unity3D Helicopter game
-Demo @ http://thomaschampagne.github.io/kopter/
 
 Physics engine coded from scratch.
+
+Windows Demo @ https://github.com/thomaschampagne/kopter/releases/download/0.3/Kopter_win_0.3.exe
+
+WebGL Demo @ http://thomaschampagne.github.io/kopter/
 
 ![20161125211304_1](https://cloud.githubusercontent.com/assets/151973/20634844/6dfabc1c-b355-11e6-82f8-4d745077bd46.jpg)
 
