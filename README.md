@@ -2,6 +2,8 @@
 
 Physics engine coded from scratch.
 
+YouTube Video: https://www.youtube.com/watch?v=c0shVUSIFNU
+
 Windows Demo @ https://github.com/thomaschampagne/kopter/releases/download/0.3/Kopter_win_0.3.exe
 
 WebGL Demo @ http://thomaschampagne.github.io/kopter/
